@@ -10,7 +10,9 @@ var app = express();
     
 // });
 
-app.use(express.static(__dirname + "/app"));
+app.use(express.static(__dirname + '/app'));
+//add this so the browser can GET the bower files
+app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 app.get('/',function (request,response) {
     response.send("Hello Świat");
