@@ -14,8 +14,8 @@ app.get('/',function (request,response) {
     response.send("Hello Świat");
 })
 
-var port = process.env.Port || 5000;
+// var port = process.env.Port || 5000;
 
-app.listen (port,function(){
-    console.log('Serwer dziala na ' + port);
+app.listen (process.env.Port || 5000,function(){
+    console.log('Serwer dziala ');
 });
