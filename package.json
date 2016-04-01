@@ -39,10 +39,11 @@
   },
   "scripts": {
     
-    "test": "karma start test\\karma.conf.js",
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "test": "karma start test\\karma.conf.js"
+    
   },
   "dependencies": {
     "express": "^4.13.4"
-  }
+  },
+  "cacheDirectories": ["node_modules", "bower_components"]
 }
