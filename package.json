@@ -38,8 +38,9 @@
     "bower": "1.7.7"
   },
   "scripts": {
-    "bowerinstall": "bower install",
-    "test": "karma start test\\karma.conf.js"
+    
+    "test": "karma start test\\karma.conf.js",
+    "postinstall": "bower install"
   },
   "dependencies": {
     "express": "^4.13.4"
