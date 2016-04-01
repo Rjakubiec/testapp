@@ -39,8 +39,8 @@
   },
   "scripts": {
     
-    "test": "karma start test\\karma.conf.js"
-    
+    "test": "karma start test\\karma.conf.js",
+    "postinstall": "bower install"
   },
   "dependencies": {
     "express": "^4.13.4"
