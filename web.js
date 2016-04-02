@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/app'));
 app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 app.get('/',function (request,response) {
-    response.send("Hello Świat");
+    response.send("Ups coś poszło nie tak");
 })
 
 // var port = process.env.Port || 5000;

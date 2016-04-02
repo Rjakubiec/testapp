@@ -7,6 +7,7 @@
 
 body {
   padding: 0;
+  background: #777;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -81,3 +82,10 @@ body {
     border-bottom: 0;
   }
 }
+
+#slider img{
+    height: 500px;
+    width: 100%;
+}
+
+

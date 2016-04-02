@@ -8,10 +8,13 @@
  * Controller of the testApp
  */
 angular.module('testApp')
-  .controller('AboutCtrl', function () {
+  .controller('KontaktCtrl', function () {
+      
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+    
+    
   });
