@@ -21,15 +21,29 @@ angular.module('testApp')
                 text: ""
             }];
 
-        var slides = $scope.slides;	
+     var slides = $scope.slides;	
 
      $scope.addSlide = function () {
         slides.push();
      };
 
-
-
      $scope.addSlide();
+     
+     $scope.news=[{
+         tytul:'a',
+         opis:'abc'
+     },
+     {
+         tytul:'b',
+         opis:'abcd'
+     },
+     {
+         tytul:'c',
+         opis:'abcde'
+     }];
+     
+     
+     
 
 
 

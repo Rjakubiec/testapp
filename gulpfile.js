@@ -8,22 +8,11 @@ var lazypipe = require('lazypipe');
 var rimraf = require('rimraf');
 var wiredep = require('wiredep').stream;
 var runSequence = require('run-sequence');
+var stylus = require('gulp-stylus');
 
 
-var gulp = require('gulp'),
-	stylus = require('gulp-stylus');
 
-gulp.task('stylus', function () {
-  return gulp.src('/stylus/*.styl')
-    .pipe(stylus())
-    .pipe(gulp.dest('/app/styles'));
-});
-	
-	
-gulp.task('stylus:watch', function () {
-  gulp.watch('stylus/*.styl', ['stylus']);
-});
-gulp.task('default', ['stylus','stylus:watch']);
+
 
 
 var yeoman = {
@@ -158,6 +147,18 @@ gulp.task('bower', function () {
     }))
   .pipe(gulp.dest(yeoman.app + '/views'));
 });
+
+gulp.task('stylus', function () {
+  return gulp.src('/stylus/*.styl')
+    .pipe(stylus())
+    .pipe(gulp.dest('/app/styles'));
+});
+	
+	
+gulp.task('stylus:watch', function () {
+  gulp.watch('stylus/*.styl', ['stylus']);
+});
+gulp.task('default', ['stylus','stylus:watch']);
 
 ///////////
 // Build //
